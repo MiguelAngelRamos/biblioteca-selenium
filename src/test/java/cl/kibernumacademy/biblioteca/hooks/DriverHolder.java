@@ -6,7 +6,7 @@ public class DriverHolder {
   // almacena un webdriver por hilo, util para ejecución paralela
   private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-  private static void set(WebDriver webDriver) {
+  public static void set(WebDriver webDriver) {
     driver.set(webDriver);
   }
 

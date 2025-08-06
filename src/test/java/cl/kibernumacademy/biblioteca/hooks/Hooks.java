@@ -16,7 +16,7 @@ public class Hooks {
     WebDriver driver = WebDriverManager.chromedriver().create();
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+    DriverHolder.set(driver);
     driver.get("https://biblioteca-testing.netlify.app/");
   }
 
