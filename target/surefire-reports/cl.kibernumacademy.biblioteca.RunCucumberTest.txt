@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Test set: cl.kibernumacademy.biblioteca.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 18.457 s <<< FAILURE! - in cl.kibernumacademy.biblioteca.RunCucumberTest
+Login de bibliotecario.Login fallido  Time elapsed: 1.687 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
+
+Registro de préstamo.Registro exitoso de préstamo  Time elapsed: 1.277 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'que el bibliotecario está en la página de préstamo' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que el bibliotecario está en la página de préstamo")
+public void que_el_bibliotecario_está_en_la_página_de_préstamo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa los datos del préstamo")
+public void ingresa_los_datos_del_préstamo(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("ve el mensaje de éxito")
+public void ve_el_mensaje_de_éxito() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Validaciones de préstamo.Libro ya prestado  Time elapsed: 1.205 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'intenta un préstamo con ISBN ya prestado' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("intenta un préstamo con ISBN ya prestado")
+public void intenta_un_préstamo_con_isbn_ya_prestado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("ve el mensaje de libro ya prestado")
+public void ve_el_mensaje_de_libro_ya_prestado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Validaciones de préstamo.Fecha de devolución anterior  Time elapsed: 1.198 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'intenta con fecha de devolución anterior' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("intenta con fecha de devolución anterior")
+public void intenta_con_fecha_de_devolución_anterior() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("ve el mensaje de fecha inválida")
+public void ve_el_mensaje_de_fecha_inválida() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
