@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import cl.kibernumacademy.biblioteca.hooks.DriverHolder;
+
 public class LoginPage {
   // Localizadores
   private By userField = By.id("username");
@@ -14,8 +16,12 @@ public class LoginPage {
   private By messageError = By.id("login-message");
 
   // retornar driver web
-  private void getDriver() {
+  private WebDriver getDriver() {
+    return DriverHolder.get();
+  }
 
+  public void abrir() {
+    getDriver().get("https://biblioteca-testing.netlify.app/");
   }
 
   public void login(String usuario, String password) {
