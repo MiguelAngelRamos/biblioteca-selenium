@@ -41,7 +41,6 @@ public class LoginSteps {
   @Then("ve un mensaje de error de login")
   public void ve_un_mensaje_de_error_de_login() {
     loginPage = new LoginPage();
-    loginPage.obtenerError().contains(null);
     Assertions.assertTrue(loginPage.obtenerError().contains("inválidas"), "Debe mostrar mensaje de credenciales inválidas");
   }
 }
